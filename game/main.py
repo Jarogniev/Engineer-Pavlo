@@ -35,7 +35,7 @@ def main():
             WIN.blit(game_window, (0, 0))
             # WIN.blit(player1.gamer, (player1.gamerX, player1.gamerY))
             player1.draw_pavlo(player1.gamerX, player1.gamerY)        # odświeżanie postaci
-            player1.pavlo_movement(pressed, player1.draw_pavlo)       # ruch postaci
+            player1.move_pavlo(pressed)                               # ruch postaci
             pygame.time.delay(5)
 
         # if pressed[pygame.K_KP_ENTER]:
